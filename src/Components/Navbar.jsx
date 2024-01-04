@@ -12,7 +12,7 @@ export default function Navbar() {
       };
 return (
     <>
-    <nav className="flex absolute bg-white bg-opacity-5 backdrop-filter backdrop-blur-sm rounded-xl text-white w-screen">
+    <nav className="flex absolute bg-white bg-opacity-5 z-50 backdrop-filter backdrop-blur-sm rounded-xl text-white w-full">
         <div className="flex m-3 p-1 gap-10 items-center justify-around">
             <a className="border-r-[1px] pr-8 border-slate-300" href="#"><img src="src\assets\ISRO.svg" alt="" /></a>
             <h1 className=" text-4xl font-light text-pretty font-mono" >ISRO</h1>
