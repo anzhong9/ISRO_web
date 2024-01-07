@@ -4,8 +4,9 @@ import {Button1} from "../Components/Buttons";
 export default function Hero() {
     return(
         <>
-        <div className="bg-black relative text-white h-screen md:h-[124vh]"
-            id="hero-section">
+        <div className="relative text-white h-screen md:h-[124vh]" 
+        style={{backgroundImage: "url('src/assets/solars.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}
+        id="hero-section">
             <div className="flex flex-col text-4xl font-semibold font-sans py-2 leading-relaxed md:px-10 xl:px-12 absolute top-80 w-1/2">
                 <div className="w-4/5">Space Technology In The Service of Mankind</div>
                 <div className="flex justify-center items-center w-full">

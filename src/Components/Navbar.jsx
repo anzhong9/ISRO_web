@@ -1,6 +1,8 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { motion, useMotionValueEvent,  useScroll } from "framer-motion";
+
+
 export default function Navbar() {
     const handleClickScroll = (idName) => {
         console.log(idName);
@@ -11,29 +13,38 @@ export default function Navbar() {
         }
       };
 
-      const [scrollPos, setScrollPos] = useState(0);
-      const [visible, setVisible] = useState(true);
-    
-      const handleScroll = () => {
-        const currentScrollPos = window.scrollY;
-        setVisible(scrollPos > currentScrollPos || currentScrollPos < 10);
-        setScrollPos(currentScrollPos);
-      };
-    
-      useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, [scrollPos]);
+     const {scrollY} = useScroll();
+     const [hidden, setHidden] = useState(false); 
+      useMotionValueEvent(scrollY, "change", (latest) => {
+        const previous = scrollY.getPrevious();
+        if (latest > previous && latest > 150) {
+          setHidden(true);
+        } else {
+          setHidden(false);
+        }
+        }
+        );
 
-return (
-    <div className="">
-    <nav 
-    className="flex fixed top-2 transition-all bg-white bg-opacity-5 z-50 backdrop-filter backdrop-blur-sm rounded-xl text-white w-full
-    ${
-        visible ? 'opacity-100' : 'opacity-0 -translate-y-full'
-      }">
+    return (
+        <div className="">
+        <motion.nav 
+        variants={
+            {
+                hidden: {
+                    y: -100,
+                    opacity: 0,
+                },
+                visible: {
+                    y: 0,
+                    opacity: 1,
+                },
+            }
+        }
+        animate = {hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="flex fixed top-2 transition-all bg-white bg-opacity-5 z-50 backdrop-filter backdrop-blur-sm rounded-xl text-white w-full
+
+        }">
         <div className="flex  p-1 gap-10 items-center justify-around">
             <a className="border-r-[1px] pr-8 border-slate-300" href="#"><img src="src\assets\ISRO.svg" alt="" /></a>
             <h1 className=" text-5xl font-light text-pretty font-mono" >ISRO</h1>
@@ -53,7 +64,7 @@ return (
             </button>
             </ul>
         </div>
-    </nav>
+    </motion.nav>
 
     </div>
 )

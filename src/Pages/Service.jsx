@@ -5,7 +5,8 @@ import ServiceCard from "../Components/ServiceCard";
 export default function Service() {
     return(
         <>
-        <div className="bg-black text-white">
+        <div className=" text-white"
+        style={{backgroundImage: "url('src/assets/planet.jpg')", backgroundSize: 'contains', backgroundPosition: 'center'}}>
             <div className="flex w-1/2 flex-col"
             id="services-section">
                 <div className="flex mt-52 font-mono md:px-10 md:py-3 p-2 justify-start items-center">
@@ -23,7 +24,7 @@ export default function Service() {
             </div>
         </div>
         <div className="bg-black text-white flex flex-col p-5 md:py-10 ">
-            <div className="serv flex justify-evenly w-full overflow-hidden">
+            <div className="serv flex justify-evenly w-full ">
                 <ServiceCard title='Satellite Services' image="" link='https:/amazon.in'/>
                 <ServiceCard title='Satellite Services' image="" link='https:/amazon.in'/>
                 <ServiceCard title='Satellite Services' image="" link='https:/amazon.in'/>

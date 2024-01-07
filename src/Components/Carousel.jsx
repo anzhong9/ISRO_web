@@ -3,9 +3,9 @@ import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
   "src/assets/carousel/p5_medium.jpg.webp",
+  "src/assets/carousel/chandrayaan.jpg",
   "src/assets/carousel/p5_medium.jpg.webp",
-  "src/assets/carousel/p5_medium.jpg.webp",
-  "src/assets/carousel/p5_medium.jpg.webp",
+  "src/assets/carousel/chandrayaan.jpg",
 
 ];
 
@@ -81,7 +81,7 @@ export const SwipeCarousel = () => {
 };
 
 const Images = ({ imgIndex }) => {
-    const content = ["Example paragraph 1", "Example paragraph 2", "Example paragraph 3", "Example paragraph 4"];
+    const content1 = ["Aditya L1", "Chandrayaan-3", "Example paragraph 3", "Example paragraph 4"];
   return (
     <>
       {imgs.map((imgSrc, idx) => {
@@ -103,14 +103,14 @@ const Images = ({ imgIndex }) => {
             <div
               style={{
                 position: "absolute",
-                top: 10,
-                right: 10,
+                top: 40, 
+                right: 50,
                 color: "white",
                 padding: "10px",
                 backgroundColor: 'transparent',
               }}
             >
-              {content[idx]}
+              {content1[idx]}
             </div>
           </motion.div>
         );
