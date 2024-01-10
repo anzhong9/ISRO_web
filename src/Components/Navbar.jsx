@@ -46,7 +46,7 @@ export default function Navbar() {
 
         }">
         <div className="flex  p-1 gap-10 items-center justify-around">
-            <a className="border-r-[1px] pr-8 border-slate-300" href="#"><img src="src\assets\ISRO.svg" alt="" /></a>
+            <a className="border-r-[1px] pr-8 border-slate-300" href="#"><img src="/assets/ISRO.svg" alt="" /></a>
             <h1 className=" text-5xl font-light text-pretty font-mono" >ISRO</h1>
         </div>
         <div className="flex flex-grow justify-end">

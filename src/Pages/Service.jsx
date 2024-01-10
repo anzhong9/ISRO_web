@@ -6,7 +6,7 @@ import Box from "../Components/Box";
 export default function Service() {
     return(
         <div 
-        style={{backgroundImage: "url('/assets/chaand.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        style={{backgroundImage: "url('../assets/chaand.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className=" text-white"
         >
             <div className="flex w-1/2 flex-col"
@@ -28,11 +28,11 @@ export default function Service() {
         <div 
         className=" text-white flex flex-col p-5 md:py-10 ">
             <div className="serv flex justify-evenly w-full ">
-                <ServiceCard title='Satellite Services' image="src\assets\Services\satellite.png" link='https://www.isro.gov.in/SatelliteSystemBusSubSystemTesting.html'/>
-                <ServiceCard title='Ground -Systems' image="src\assets\Services\ground.png" link='https://www.isro.gov.in/GroundSystemSupport.html'/>
-                <ServiceCard title=' Launch - Services ' image="src\assets\Services\rocket.png" link='https://www.isro.gov.in/launchservices.html'/>
-                <ServiceCard title='Earth Observation' image="src\assets\Services\obs.png" link='https://www.isro.gov.in/SpaceBasedEarthObservationServices.html'/>
-                <ServiceCard title='Transferring Orbit' image="src\assets\Services\orbit.png" link='https://www.isro.gov.in/TransferOrbitService.html'/>
+                <ServiceCard title='Satellite Services' image="/assets/Services/satellite.png" link='https://www.isro.gov.in/SatelliteSystemBusSubSystemTesting.html'/>
+                <ServiceCard title='Ground -Systems' image="/assets/Services/ground.png" link='https://www.isro.gov.in/GroundSystemSupport.html'/>
+                <ServiceCard title=' Launch - Services ' image="/assets/Services/rocket.png" link='https://www.isro.gov.in/launchservices.html'/>
+                <ServiceCard title='Earth Observation' image="/assets/Services/obs.png" link='https://www.isro.gov.in/SpaceBasedEarthObservationServices.html'/>
+                <ServiceCard title='Transferring Orbit' image="/assets/Services/orbit.png" link='https://www.isro.gov.in/TransferOrbitService.html'/>
             </div>
             <div className=" flex justify-center items-center mt-20"><Button2 text="SEE ALL"/></div>
         </div>
