@@ -14,11 +14,11 @@ function Footer() {
           <div className="col-span-1">
             <h4 className="text-lg font-medium mb-4">Important Links</h4>
             <ol className="list-disc ">
-              <li><a href="#">RTI</a></li>
-              <li><a href="#">Feedback</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="">Website Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
+              <li><a className='hover:text-cyan-300' href="#">RTI</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Feedback</a></li>
+              <li><a className='hover:text-cyan-300' href="#">FAQs</a></li>
+              <li><a className='hover:text-cyan-300' href="">Website Policy</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Terms of Use</a></li>
             
               {/* Add remaining links here */}
             </ol>
@@ -26,11 +26,11 @@ function Footer() {
           <div className="col-span-1">
             <h4 className="text-lg font-medium mb-4">Other Links</h4>
             <ol className="list-disc ">
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Tenders</a></li>
-              <li><a href="#">Galleries</a></li>
-              <li><a href="#">Archives</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Sitemap</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Careers</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Tenders</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Galleries</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Archives</a></li>
 
               {/* Add remaining links here */}
             </ol>
@@ -38,9 +38,9 @@ function Footer() {
           <div className="col-span-1">
             <h4 className="text-lg font-medium mb-4">Connect Us!</h4>
             <ol className="list-disc ">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Help</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Facebook</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Twitter</a></li>
+              <li><a className='hover:text-cyan-300' href="#">Help</a></li>
             </ol>
           </div>
         </div>

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
-  "src/assets/carousel/p5_medium.jpg.webp",
+  "src/assets/carousel/Aditya-L1.jpg",
   "src/assets/carousel/chandrayaan.jpg",
-  "src/assets/carousel/p5_medium.jpg.webp",
+  "src/assets/carousel/Aditya-L1.jpg",
   "src/assets/carousel/chandrayaan.jpg",
 
 ];
@@ -53,7 +53,7 @@ export const SwipeCarousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-neutral-950 py-3">
+    <div className="relative overflow-hidden bg-transparent py-3">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -98,7 +98,7 @@ const Images = ({ imgIndex }) => {
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className=" h-[70vh] w-[80vw]  shrink-0 rounded-xl bg-neutral-800 "
+            className=" h-[70vh] w-[80vw]  shrink-0 rounded-xl bg-neutral-950/60 "
           >
             <div
               style={{

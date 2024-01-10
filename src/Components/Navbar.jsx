@@ -50,17 +50,17 @@ export default function Navbar() {
             <h1 className=" text-5xl font-light text-pretty font-mono" >ISRO</h1>
         </div>
         <div className="flex flex-grow justify-end">
-            <ul className="flex items-center font-medium justify-around text-xl gap-16 mr-16">
-            <button className="active:scale-[1.02] p-1 bg-transparent rounded-lg active:text-blue-300 hover:shadow-sm hover:shadow-cyan-700 " onClick={() => handleClickScroll('hero-section')}>
+            <ul className="flex items-center font-medium justify-around text-xl gap-14 mr-14">
+            <button className="active:scale-[1.02] p-2 hover:bg-blue-100 hover:bg-opacity-5 rounded-lg hover:scale-105 transition-all duration-75 " onClick={() => handleClickScroll('hero-section')}>
            Home </button>
-            <button onClick={() => handleClickScroll("services-section")}> 
+            <button className="active:scale-[1.02] p-2 hover:bg-blue-100 hover:bg-opacity-5 rounded-lg hover:scale-105 transition-all duration-75 " onClick={() => handleClickScroll("services-section")}> 
            Services
             </button>
-            <button onClick={() => handleClickScroll("programmes-section")}>
+            <button className="active:scale-[1.02] p-2 hover:bg-blue-100 hover:bg-opacity-5 rounded-lg hover:scale-105 transition-all duration-75 " onClick={() => handleClickScroll("programmes-section")}>
             Updates
             </button>
-            <button onClick={() => handleClickScroll("activities-section")}>
-            
+            <button className="active:scale-[1.02] p-2 text-md hover:bg-blue-100 hover:bg-opacity-5 rounded-lg hover:scale-105 transition-all duration-75 " onClick={() => handleClickScroll("activities-section")}>
+            Engage with Us!
             </button>
             </ul>
         </div>

@@ -5,7 +5,7 @@ export default function Hero() {
     return(
         <>
         <div className="relative text-white h-screen md:h-[124vh]" 
-        style={{backgroundImage: "url('src/assets/solars.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}
+        style={{backgroundImage: "url('src/assets/planet.jpg')", backgroundSize: 'contains', backgroundPosition: 'center'}}
         id="hero-section">
             <div className="flex flex-col text-4xl font-semibold font-sans py-2 leading-relaxed md:px-10 xl:px-12 absolute top-80 w-1/2">
                 <div className="w-4/5">Space Technology In The Service of Mankind</div>
