@@ -6,7 +6,7 @@ import Box from "../Components/Box";
 export default function Service() {
     return(
         <div 
-        style={{backgroundImage: "url('src/assets/chaand.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        style={{backgroundImage: "url('/assets/chaand.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className=" text-white"
         >
             <div className="flex w-1/2 flex-col"

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
-  "src/assets/carousel/Aditya-L1.jpg",
-  "src/assets/carousel/chandrayaan.jpg",
-  "src/assets/carousel/Aditya-L1.jpg",
-  "src/assets/carousel/chandrayaan.jpg",
+  "/assets/carousel/Aditya-L1.jpg",
+  "/assets/carousel/chandrayaan.jpg",
+  "/assets/carousel/Aditya-L1.jpg",
+  "/assets/carousel/chandrayaan.jpg",
 
 ];
 
